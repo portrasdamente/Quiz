@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Qual padrão mais te trava? | Por Trás da Mente</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#faf6ee;--card:#fff;--ink:#16323a;--mut:#5d6f74;--ac:#d9603b;--teal:#124b5a;--soft:#fff4dc;--line:#e6dcc8;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1b20;--card:#14282f;--ink:#efe6d6;--mut:#9fb0b3;--ac:#ee7a55;--teal:#7cc3d4;--soft:#1d343b;--line:#2a444c;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:620px;margin:0 auto;padding:28px 18px 48px}
+h1,h2{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 12px;color:var(--teal)}h1{font-size:2rem}h1 em{color:var(--ac);font-style:normal}
+.sub{color:var(--mut)}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}.ex{background:var(--soft)}
+.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin:14px 0}.bar i{display:block;height:100%;background:var(--ac);transition:width .3s}
+button,.btn{font:inherit;display:inline-block;text-align:center;text-decoration:none;background:var(--ac);color:#fff;border:0;border-radius:12px;padding:14px 22px;cursor:pointer;font-weight:700}
+.alt{background:transparent;color:var(--teal);border:1px solid var(--teal)}.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1px solid var(--line);font-weight:500;margin:10px 0}
+.opt:active,.opt:hover{border-color:var(--ac)}.row{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.fine{font-size:.78rem;color:var(--mut);margin-top:30px}
+</style></head><body><main id="app"></main>
+<script>
+const LINK="https://canalportrasdamente.hotmart.host/7-dias-para-desapegar-e-assumir-o-controle-224897e1-8ea7-4d3b-9967-904dc4f2b011";
+const Q=["Revisito conversas antigas ou checo o perfil de alguém que já saiu da minha vida.","Uma mensagem mais seca ou um silêncio de alguém me deixa em alerta por horas.","Fico remoendo o motivo de um término ou de uma injustiça, esperando uma explicação.","Adio projetos e decisões porque ainda não é o momento perfeito.","Assumo os problemas dos outros e sinto culpa ao dizer “não”.","Tenho dificuldade de ficar em silêncio, sem celular ou som.","Quando as coisas vão bem, acabo estragando algo ou fico esperando o pior."];
+const P=[["A Ilusão da Idealização","Você pode estar sentindo falta mais da versão idealizada de alguém ou de uma fase do que da realidade. O ebook mostra por que a mente edita as lembranças e como quebrar esse ciclo."],
+["A Hipervigilância e o Medo da Rejeição","Você pode viver em estado de alerta, lendo o humor dos outros como se fosse sobre você. O ebook mostra como desarmar esse alarme e parar de carregar emoções que não são suas."],
+["A Necessidade de Fechamento","Você pode estar esperando uma explicação ou um pedido de desculpas para conseguir seguir em frente. O ebook mostra como conceder a si mesmo o ponto final."],
+["A Paralisação pelo Momento Perfeito","Você pode estar usando o perfeccionismo como forma de evitar o risco de se expor. O ebook traz um método simples para quebrar a inércia em 5 minutos."],
+["A Síndrome do Salvador","Você pode estar exausto de carregar o que não é seu e sentir culpa ao colocar limites. O ebook ensina a separar o que é seu do que é do outro."],
+["A Intolerância ao Silêncio","Você pode estar usando estímulos o tempo todo para não ficar a sós com os próprios pensamentos. O ebook propõe um treino gradual de tolerância ao desconforto."],
+["O Medo de Sustentar o que Dá Certo","Você pode sentir ansiedade justamente quando a vida melhora e acabar recuando. O ebook mostra como ancorar uma nova identidade e sustentar o progresso."]];
+const $=s=>document.querySelector(s),app=$("#app");let A=[],i=-1;
+const cta=t=>`<a class="btn" href="${LINK}" target="_blank" rel="noopener">${t}</a>`;
+function go(){window.scrollTo(0,0);render()}
+function render(){
+if(i<0){app.innerHTML=`<p class="sub">Por Trás da Mente</p><h1>Qual padrão mais te <em>trava</em>?</h1><p>Responda 7 perguntas rápidas e descubra qual dos 7 padrões do ebook <b>7 Dias para Desapegar e Assumir o Controle</b> mais aparece na sua vida hoje.</p><p class="sub">Leva cerca de 1 minuto. Não há respostas certas ou erradas.</p><div class="row"><button id="s">Começar o quiz</button></div><p class="fine">Este quiz é uma reflexão de autoconhecimento. Não é diagnóstico nem substitui acompanhamento profissional.</p>`;$("#s").onclick=()=>{i=0;A=[];go()};return}
+if(i<7){app.innerHTML=`<div class="bar"><i style="width:${i/7*100}%"></i></div><p class="sub">Pergunta ${i+1} de 7</p><h2>${Q[i]}</h2><p class="sub">Com que frequência isso acontece na sua vida?</p>${["Quase nunca","Às vezes","Com frequência"].map((o,j)=>`<button class="opt" data-a="${j}">${o}</button>`).join("")}`;
+app.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{A[i]=+b.dataset.a;i++;go()});return}
+const top=A.map((s,k)=>[s,k]).sort((a,b)=>b[0]-a[0]||a[1]-b[1]).filter(x=>x[0]>0).slice(0,3).map(x=>x[1]);
+const sh=navigator.share?`<button class="alt" id="sh">Compartilhar</button>`:"";
+app.innerHTML=top.length?`<p class="sub">Seu resultado</p><h1>${P[top[0]][0]}</h1><div class="card ex"><p style="margin:0">${P[top[0]][1]}</p></div>${top.length>1?`<p class="sub">Também aparecem na sua vida:</p>${top.slice(1).map(k=>`<div class="card"><b>${P[k][0]}</b></div>`).join("")}`:""}<p>No ebook, cada padrão é um dia do protocolo, com diagnóstico, explicação científica, virada de chave e um exercício prático para aplicar na hora.</p><div class="row">${cta("Quero o ebook")}${sh}<button class="alt" id="r">Refazer</button></div><p class="fine">Reflexão de autoconhecimento. Não é diagnóstico nem substitui psicoterapia ou acompanhamento profissional. Em caso de sofrimento intenso, procure um profissional qualificado.</p>`
+:`<h1>Você marcou poucos padrões fortes agora</h1><p>Isso é bom sinal. Mesmo assim, o ebook ajuda a reconhecer cedo os gatilhos que podem aparecer em momentos de estresse.</p><div class="row">${cta("Conhecer o ebook")}<button class="alt" id="r">Refazer</button></div>`;
+$("#r").onclick=()=>{i=-1;go()};const b=$("#sh");if(b)b.onclick=()=>{try{navigator.share({title:"Qual padrão mais te trava?",url:location.href})}catch(e){}}}
+render();
+</script></body></html>
