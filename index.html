@@ -1,41 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Qual padrão mais te trava? | Por Trás da Mente</title>
+<title>Qual padrão te prende? Teste grátis | Por Trás da Mente</title>
+<meta name="description" content="Sete situações do dia a dia para descobrir qual padrão emocional mais aparece na sua vida. Cerca de 2 minutos, sem cadastro, resultado na hora.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Qual padrão te prende?">
+<meta property="og:description" content="Sete situações do dia a dia. Cerca de 2 minutos, sem cadastro, resultado na hora, com um exercício para fazer hoje.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
 <style>
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#faf6ee;--card:#fff;--ink:#16323a;--mut:#5d6f74;--ac:#d9603b;--teal:#124b5a;--soft:#fff4dc;--line:#e6dcc8;color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1b20;--card:#14282f;--ink:#efe6d6;--mut:#9fb0b3;--ac:#ee7a55;--teal:#7cc3d4;--soft:#1d343b;--line:#2a444c;color-scheme:dark}}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:620px;margin:0 auto;padding:28px 18px 48px}
-h1,h2{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 12px;color:var(--teal)}h1{font-size:2rem}h1 em{color:var(--ac);font-style:normal}
-.sub{color:var(--mut)}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}.ex{background:var(--soft)}
-.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin:14px 0}.bar i{display:block;height:100%;background:var(--ac);transition:width .3s}
-button,.btn{font:inherit;display:inline-block;text-align:center;text-decoration:none;background:var(--ac);color:#fff;border:0;border-radius:12px;padding:14px 22px;cursor:pointer;font-weight:700}
-.alt{background:transparent;color:var(--teal);border:1px solid var(--teal)}.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1px solid var(--line);font-weight:500;margin:10px 0}
-.opt:active,.opt:hover{border-color:var(--ac)}.row{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.fine{font-size:.78rem;color:var(--mut);margin-top:30px}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#faf6ee;--card:#ffffff;--ink:#16323a;--mut:#56686d;--ac:#c4532e;--btnink:#ffffff;--teal:#124b5a;--soft:#fff4dc;--line:#e6dcc8;--gold:#b8924a;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1b20;--card:#14282f;--ink:#efe6d6;--mut:#a9b9bc;--ac:#ee7a55;--btnink:#1b1209;--teal:#7cc3d4;--soft:#1d343b;--line:#2a444c;--gold:#d7b46c;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:600px;margin:0 auto;padding:26px 18px 56px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--teal);line-height:1.2;margin:0 0 12px}
+h1{font-size:2.05rem}h2{font-size:1.4rem}h3{font-size:1.05rem;margin-bottom:6px}
+p{margin:0 0 14px}
+.sub{color:var(--mut)}
+.brand{font-family:Georgia,serif;color:var(--mut);margin-bottom:18px}
+.bar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin:6px 0 18px}
+.bar i{display:block;height:100%;background:var(--ac);transition:width .25s}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+.ex{background:var(--soft)}
+.quote{border-left:4px solid var(--gold);padding:4px 0 4px 14px;margin:14px 0;font-family:Georgia,serif;font-size:1.1rem;color:var(--ink)}
+ul{padding-left:20px;margin:0 0 14px}li{margin:4px 0}
+button,.btn{font:inherit;display:inline-block;text-align:center;text-decoration:none;background:var(--ac);color:var(--btnink);border:0;border-radius:12px;padding:14px 22px;cursor:pointer;font-weight:700}
+.alt{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1px solid var(--line);font-weight:500;margin:10px 0;padding:16px 18px}
+.opt:hover,.opt:active{border-color:var(--ac)}
+.link{background:none;border:0;color:var(--mut);padding:8px 0;font-weight:500;text-decoration:underline}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.fine{font-size:.8rem;color:var(--mut);margin-top:28px}
+button:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.in{animation:in .25s ease}
+@keyframes in{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.in{animation:none}.bar i{transition:none}}
 </style></head><body><main id="app"></main>
 <script>
-const LINK="https://canalportrasdamente.hotmart.host/7-dias-para-desapegar-e-assumir-o-controle-224897e1-8ea7-4d3b-9967-904dc4f2b011";
-const Q=["Revisito conversas antigas ou checo o perfil de alguém que já saiu da minha vida.","Uma mensagem mais seca ou um silêncio de alguém me deixa em alerta por horas.","Fico remoendo o motivo de um término ou de uma injustiça, esperando uma explicação.","Adio projetos e decisões porque ainda não é o momento perfeito.","Assumo os problemas dos outros e sinto culpa ao dizer “não”.","Tenho dificuldade de ficar em silêncio, sem celular ou som.","Quando as coisas vão bem, acabo estragando algo ou fico esperando o pior."];
-const P=[["A Ilusão da Idealização","Você pode estar sentindo falta mais da versão idealizada de alguém ou de uma fase do que da realidade. O ebook mostra por que a mente edita as lembranças e como quebrar esse ciclo."],
-["A Hipervigilância e o Medo da Rejeição","Você pode viver em estado de alerta, lendo o humor dos outros como se fosse sobre você. O ebook mostra como desarmar esse alarme e parar de carregar emoções que não são suas."],
-["A Necessidade de Fechamento","Você pode estar esperando uma explicação ou um pedido de desculpas para conseguir seguir em frente. O ebook mostra como conceder a si mesmo o ponto final."],
-["A Paralisação pelo Momento Perfeito","Você pode estar usando o perfeccionismo como forma de evitar o risco de se expor. O ebook traz um método simples para quebrar a inércia em 5 minutos."],
-["A Síndrome do Salvador","Você pode estar exausto de carregar o que não é seu e sentir culpa ao colocar limites. O ebook ensina a separar o que é seu do que é do outro."],
-["A Intolerância ao Silêncio","Você pode estar usando estímulos o tempo todo para não ficar a sós com os próprios pensamentos. O ebook propõe um treino gradual de tolerância ao desconforto."],
-["O Medo de Sustentar o que Dá Certo","Você pode sentir ansiedade justamente quando a vida melhora e acabar recuando. O ebook mostra como ancorar uma nova identidade e sustentar o progresso."]];
-const $=s=>document.querySelector(s),app=$("#app");let A=[],i=-1;
-const cta=t=>`<a class="btn" href="${LINK}" target="_blank" rel="noopener">${t}</a>`;
+/* ===== CONFIGURAÇÃO ===== */
+const CONFIG={
+  /* Página de vendas do ebook */
+  link:"https://canalportrasdamente.hotmart.host/7-dias-para-desapegar-e-assumir-o-controle-224897e1-8ea7-4d3b-9967-904dc4f2b011",
+  /* Link da página de captura de e-mail (MailerLite, Brevo etc.). Deixe vazio até criar. */
+  lista:"",
+  /* Código do GoatCounter (grátis). Ex.: "portrasdamente". Deixe vazio até criar. */
+  goatcounter:""
+};
+
+const origem=(new URLSearchParams(location.search).get("utm_source")||"direto").replace(/[^a-z0-9_-]/gi,"").slice(0,30)||"direto";
+function track(n){try{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:"evento/"+n,title:n,event:true})}}catch(e){}}
+if(CONFIG.goatcounter){const s=document.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.dataset.goatcounter="https://"+CONFIG.goatcounter+".goatcounter.com/count";document.head.appendChild(s)}
+const destino=()=>CONFIG.link+(CONFIG.link.indexOf("?")>-1?"&":"?")+"src=quiz-"+origem;
+
+/* ===== PERGUNTAS: cada opção soma ponto para um padrão (0 a 6) ===== */
+const Q=[
+{q:"Alguém importante demora horas para responder à sua mensagem. O que mais acontece?",o:[
+["Releio a conversa procurando o que eu possa ter dito de errado.",1],
+["Abro conversas antigas e lembro de como era no começo.",0],
+["Fico esperando que a pessoa explique o motivo do sumiço.",2],
+["Começo a imaginar que algo vai dar errado, mesmo com tudo bem.",6]]},
+{q:"Uma história que doeu terminou. O que mais pesa?",o:[
+["Não saber exatamente por que aconteceu.",2],
+["A saudade de como era no começo.",0],
+["A sensação de que eu deveria ter feito mais pela pessoa.",4],
+["O silêncio de casa à noite, quando não há nada para me distrair.",5]]},
+{q:"Há semanas existe uma decisão importante parada. Por quê?",o:[
+["Ainda não é o momento certo. Preciso de mais clareza.",3],
+["Tenho medo da reação ou do julgamento das pessoas.",1],
+["Estou resolvendo as coisas dos outros primeiro e não sobra tempo.",4],
+["Quando começo a avançar, algo me puxa de volta.",6]]},
+{q:"Alguém próximo pede um favor que você não queria fazer. Você...",o:[
+["Aceita e depois sente que se anulou.",4],
+["Aceita para não decepcionar nem ser rejeitado.",1],
+["Adia a resposta, esperando o momento ideal para dizer não.",3],
+["Aceita e já engata outra tarefa para não sentir o incômodo.",5]]},
+{q:"É noite de sexta e você está sozinho(a) em casa. O que acontece?",o:[
+["Ligo a TV, ponho música e rolo o feed até cansar.",5],
+["Reviso fotos e mensagens antigas.",0],
+["Penso no que ainda não comecei e me cobro por isso.",3],
+["Fico esperando uma mensagem ou uma explicação que talvez nunca venha.",2]]},
+{q:"As coisas finalmente estão indo bem. Como você reage?",o:[
+["Fico esperando a próxima má notícia.",6],
+["Observo o humor das pessoas, com medo de que algo mude.",1],
+["Penso em quem está pior e sinto que preciso ajudar.",4],
+["Deixo para depois o que poderia consolidar, esperando estar pronto(a).",3]]},
+{q:"A lembrança de alguém que se foi bate. O que você faz?",o:[
+["Releio conversas e lembro só dos bons momentos.",0],
+["Repasso o que foi dito, tentando entender o motivo.",2],
+["Sinto medo de que, se eu estiver bem, a dor volte pior.",6],
+["Encho a cabeça de barulho e tarefas para não sentir.",5]]}
+];
+
+/* ===== RESULTADOS: um por capítulo do ebook ===== */
+const P=[
+{n:"O Editor de Memórias",
+ tag:"Você sente falta menos da realidade e mais da versão que a sua mente editou.",
+ rec:["Você revisita conversas e fotos antigas, principalmente à noite.","Lembra dos bons momentos e esquece os conflitos.","Sente um vazio quando encara a realidade de agora."],
+ why:"A memória não é um arquivo fiel: ela é reconstruída a cada vez que lembramos, e na saudade tende a suavizar o que doeu. A dor é real, mas parte dela vem do retrato bonito que a mente pinta sobre o que poderia ter sido.",
+ ex:"No bloco de notas, escreva 2 fatos concretos sobre o que doía, não funcionava ou era incompatível. Só fatos, sem insultos. Releia quando a vontade de romantizar ou de mandar mensagem aparecer.",
+ fr:"Isso é saudade editada. Eu releio a minha lista de realidade."},
+{n:"O Vigia",
+ tag:"Você lê o humor dos outros como se fosse sobre você.",
+ rec:["Uma mensagem seca ou um silêncio longo te deixa em alerta.","Você pisa em ovos para evitar conflito.","Tenta consertar o clima antes de saber se existe um problema."],
+ why:"Quando ler o humor do outro foi uma forma de se proteger, o sistema de alarme pode ficar sensível demais e tratar sinais neutros como risco de rejeição. Isso costuma custar muita energia.",
+ ex:"Na próxima vez que sentir a urgência de perguntar “está tudo bem?”, pare e diga: “isso é o meu alarme”. Depois pergunte: existe um fato concreto, ou estou deduzindo a partir da minha ansiedade?",
+ fr:"O humor do outro pertence ao outro. Eu checo os fatos, não a minha ansiedade."},
+{n:"O Esperador de Respostas",
+ tag:"Você espera uma explicação para conseguir seguir em frente.",
+ rec:["Você revive conversas tentando entender o motivo exato.","Imagina o que diria se o outro admitisse o erro.","Sente que a sua paz depende do que o outro vai dizer."],
+ why:"A mente quer uma resposta definitiva e, quando ela não vem, preenche as lacunas com hipóteses autocríticas. Procurar o ponto final perfeito também pode ser um jeito de adiar o luto.",
+ ex:"Reserve 5 minutos e escreva uma carta que você não vai enviar, com tudo o que ficou engasgado. No fim, escreva: “A forma como essa história terminou foi a resposta que eu tenho.” Depois apague ou rasgue. Se as emoções ficarem fortes, pare e fale com alguém de confiança.",
+ fr:"O que aconteceu já me deu a resposta que eu tenho. Eu escolho o meu ponto final."},
+{n:"O Adiador Perfeito",
+ tag:"Você espera o momento certo para não correr o risco de errar.",
+ rec:["Tem projetos e conversas engavetados “até estar pronto(a)”.","Só começa quando tem certeza.","Chama de perfeccionismo o que às vezes é medo de ser visto tentando."],
+ why:"Adiar alivia o desconforto de agora, mas costuma aumentar a culpa depois. A clareza muitas vezes nasce da ação, e não antes dela.",
+ ex:"Escolha algo que você adia e reduza até ficar quase ridículo de tão simples, como abrir o documento e escrever 3 linhas. Faça por 5 minutos, de qualquer jeito. Depois pode parar: começar já conta.",
+ fr:"Cinco minutos, imperfeito. Antes feito do que perfeito e inexistente."},
+{n:"O Salvador",
+ tag:"Você carrega problemas que não são seus e sente culpa ao dizer não.",
+ rec:["Você é a pessoa que todo mundo procura quando precisa.","Perde o sono com dilemas dos outros.","Um “não” vem com culpa, e não com alívio."],
+ why:"Ajudar traz sensação de valor e de controle, e por isso pode ser tão difícil parar. Às vezes o sacrifício também serve para aliviar a própria ansiedade de decepcionar ou de ser deixado.",
+ ex:"Antes do próximo pedido, pergunte: “De quem são as consequências finais se isso não for resolvido?” Se forem do outro, tente dizer: “Eu confio na sua capacidade de resolver isso, mas não posso assumir essa tarefa por você.”",
+ fr:"Eu confio em você. Não posso fazer isso por você."},
+{n:"O Fugitivo do Silêncio",
+ tag:"Você usa estímulos o tempo todo para não ficar a sós com a sua mente.",
+ rec:["Liga o rádio no carro e o podcast para arrumar a casa.","Dorme rolando o feed.","Sente incômodo quando tudo fica quieto."],
+ why:"Distrair-se não é errado. O ponto é quando a distração vira a única forma de lidar com o que sentimos, e o que a gente evita sentir continua influenciando as escolhas pelos bastidores.",
+ ex:"Deixe o celular em outro cômodo e sente-se por 5 minutos, só observando. Tédio e inquietação vão aparecer. Diga: “isso é o desconforto de ficar sem distração, ele passa”. Não faça este exercício em momento de crise.",
+ fr:"Isso é o desconforto de ficar sem distração. Ele passa."},
+{n:"O Sabotador da Calma",
+ tag:"Quando a vida melhora, algo em você puxa para trás.",
+ rec:["Você estranha a calma e espera a próxima má notícia.","Cria conflito ou se afasta quando as coisas vão bem.","Sente que algo terrível pode acontecer a qualquer momento."],
+ why:"Quem cresceu em ambientes instáveis pode associar tensão ao “normal”, e a paz soa como alarme. A autossabotagem pode ser uma tentativa antiga de voltar ao terreno conhecido.",
+ ex:"Identifique o que você costuma fazer quando as coisas vão bem (eu sumo, eu arrumo briga, eu procrastino). Escreva uma frase de interrupção e leia em voz alta quando o impulso aparecer.",
+ fr:"Eu não preciso estragar nada para me sentir seguro. Eu sustento esse progresso."}
+];
+
+/* ===== ESTADO E TELAS ===== */
+const app=document.getElementById("app");
+let i=-1,A=[],ORD=[];
+function shuffle(n){const a=[...Array(n).keys()];for(let k=n-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
 function go(){window.scrollTo(0,0);render()}
+
 function render(){
-if(i<0){app.innerHTML=`<p class="sub">Por Trás da Mente</p><h1>Qual padrão mais te <em>trava</em>?</h1><p>Responda 7 perguntas rápidas e descubra qual dos 7 padrões do ebook <b>7 Dias para Desapegar e Assumir o Controle</b> mais aparece na sua vida hoje.</p><p class="sub">Leva cerca de 1 minuto. Não há respostas certas ou erradas.</p><div class="row"><button id="s">Começar o quiz</button></div><p class="fine">Este quiz é uma reflexão de autoconhecimento. Não é diagnóstico nem substitui acompanhamento profissional.</p>`;$("#s").onclick=()=>{i=0;A=[];go()};return}
-if(i<7){app.innerHTML=`<div class="bar"><i style="width:${i/7*100}%"></i></div><p class="sub">Pergunta ${i+1} de 7</p><h2>${Q[i]}</h2><p class="sub">Com que frequência isso acontece na sua vida?</p>${["Quase nunca","Às vezes","Com frequência"].map((o,j)=>`<button class="opt" data-a="${j}">${o}</button>`).join("")}`;
-app.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{A[i]=+b.dataset.a;i++;go()});return}
-const top=A.map((s,k)=>[s,k]).sort((a,b)=>b[0]-a[0]||a[1]-b[1]).filter(x=>x[0]>0).slice(0,3).map(x=>x[1]);
-const sh=navigator.share?`<button class="alt" id="sh">Compartilhar</button>`:"";
-app.innerHTML=top.length?`<p class="sub">Seu resultado</p><h1>${P[top[0]][0]}</h1><div class="card ex"><p style="margin:0">${P[top[0]][1]}</p></div>${top.length>1?`<p class="sub">Também aparecem na sua vida:</p>${top.slice(1).map(k=>`<div class="card"><b>${P[k][0]}</b></div>`).join("")}`:""}<p>No ebook, cada padrão é um dia do protocolo, com diagnóstico, explicação científica, virada de chave e um exercício prático para aplicar na hora.</p><div class="row">${cta("Quero o ebook")}${sh}<button class="alt" id="r">Refazer</button></div><p class="fine">Reflexão de autoconhecimento. Não é diagnóstico nem substitui psicoterapia ou acompanhamento profissional. Em caso de sofrimento intenso, procure um profissional qualificado.</p>`
-:`<h1>Você marcou poucos padrões fortes agora</h1><p>Isso é bom sinal. Mesmo assim, o ebook ajuda a reconhecer cedo os gatilhos que podem aparecer em momentos de estresse.</p><div class="row">${cta("Conhecer o ebook")}<button class="alt" id="r">Refazer</button></div>`;
-$("#r").onclick=()=>{i=-1;go()};const b=$("#sh");if(b)b.onclick=()=>{try{navigator.share({title:"Qual padrão mais te trava?",url:location.href})}catch(e){}}}
+  if(i<0)return inicio();
+  if(i<Q.length)return pergunta();
+  return resultado();
+}
+
+function inicio(){
+  app.innerHTML='<div class="in"><p class="brand">Por Trás da Mente</p><h1>Qual padrão te prende?</h1><p>Sete situações do dia a dia. Escolha a resposta que mais se parece com você, sem pensar demais.</p><ul><li>Cerca de 2 minutos</li><li>Sem cadastro</li><li>Resultado na hora, com um exercício para fazer hoje</li></ul><div class="row"><button id="s">Começar</button></div><p class="fine">Este teste é uma reflexão de autoconhecimento. Não é diagnóstico e não substitui psicoterapia ou acompanhamento profissional.</p></div>';
+  document.getElementById("s").onclick=function(){A=[];ORD=[];i=0;track("quiz-iniciado");go()};
+}
+
+function pergunta(){
+  const q=Q[i];
+  if(!ORD[i])ORD[i]=shuffle(q.o.length);
+  const opts=ORD[i].map(function(idx){return '<button class="opt" data-p="'+q.o[idx][1]+'">'+q.o[idx][0]+'</button>'}).join("");
+  app.innerHTML='<div class="in"><div class="bar"><i style="width:'+(i/Q.length*100)+'%"></i></div><p class="sub">Situação '+(i+1)+' de '+Q.length+'</p><h2>'+q.q+'</h2>'+opts+(i>0?'<button class="link" id="v">Voltar</button>':'')+'</div>';
+  app.querySelectorAll("[data-p]").forEach(function(b){b.onclick=function(){A[i]=+b.dataset.p;i++;if(i===Q.length)track("quiz-concluido");go()}});
+  const v=document.getElementById("v");if(v)v.onclick=function(){i--;go()};
+}
+
+function resultado(){
+  const S=Array(7).fill(0);A.forEach(function(k){S[k]++});
+  const ult=function(k){return A.lastIndexOf(k)};
+  const ord=[0,1,2,3,4,5,6].sort(function(a,b){return S[b]-S[a]||ult(b)-ult(a)});
+  const k=ord[0],p=P[k];
+  const k2=S[ord[1]]>=2?ord[1]:-1;
+  const lista=CONFIG.lista?'<div class="card"><h3>Receba o Dia 1 completo no seu e-mail</h3><p>O exercício do primeiro dia do guia, com o passo a passo, para fazer no seu ritmo.</p><a class="btn alt" data-t="clique-lista" href="'+CONFIG.lista+'" target="_blank" rel="noopener">Quero receber</a></div>':"";
+  app.innerHTML='<div class="in"><p class="sub">Seu padrão mais forte</p><h1>'+p.n+'</h1><p>'+p.tag+'</p>'
+  +'<div class="card"><h3>Você pode se reconhecer se...</h3><ul>'+p.rec.map(function(t){return "<li>"+t+"</li>"}).join("")+'</ul></div>'
+  +'<div class="card"><h3>O que costuma sustentar esse padrão</h3><p style="margin:0">'+p.why+'</p></div>'
+  +'<div class="card ex"><h3>Para fazer hoje, em 5 minutos</h3><p style="margin:0">'+p.ex+'</p></div>'
+  +'<h3>Sua frase para os momentos de impulso</h3><div class="quote">'+p.fr+'</div>'
+  +(k2>=0?'<p class="sub">Também aparece na sua vida: <b>'+P[k2].n+'</b> (Dia '+(k2+1)+' do guia).</p>':"")
+  +'<div class="card"><h3>Este é o Dia '+(k+1)+' do guia de 7 dias</h3><p>O guia trabalha um padrão por dia, com diagnóstico, explicação, mudança de perspectiva e um exercício prático de 20 a 30 minutos. Há também um app de bônus, com timers e diário.</p><a class="btn" data-t="clique-guia" href="'+destino()+'" target="_blank" rel="noopener">Ver o guia de 7 dias</a></div>'
+  +lista
+  +'<div class="row"><button class="alt" id="sh">Compartilhar meu resultado</button><button class="link" id="r">Refazer o teste</button></div><p id="msg" class="sub" role="status"></p>'
+  +'<p class="fine">Reflexão de autoconhecimento. Não é diagnóstico e não substitui psicoterapia ou acompanhamento profissional. Em situação de sofrimento intenso, procure um profissional qualificado. Em crise, ligue para o CVV: 188 (24 horas, gratuito).</p></div>';
+  document.getElementById("r").onclick=function(){i=-1;go()};
+  document.getElementById("sh").onclick=function(){
+    track("compartilhar");
+    const url=location.origin+location.pathname+"?utm_source=compartilhado";
+    const txt="Meu padrão é “"+p.n+"”. Qual é o seu?";
+    const msg=document.getElementById("msg");
+    if(navigator.share){navigator.share({title:"Qual padrão te prende?",text:txt,url:url}).catch(function(){})}
+    else if(navigator.clipboard){navigator.clipboard.writeText(txt+" "+url).then(function(){msg.textContent="Link copiado."}).catch(function(){msg.textContent=url})}
+    else{msg.textContent=url}
+  };
+}
+
+app.addEventListener("click",function(e){const a=e.target.closest("[data-t]");if(a)track(a.dataset.t)});
 render();
 </script></body></html>
